@@ -1,18 +1,80 @@
+/********** Base styles **********/
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-div:hover {
-  font-size: 24px;
-  color: blue;
+h1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.75em;
 }
-div {
+
+.container {
+  background-color: #96aaaa;
+  position: relative;
+  margin: 1%;
+}
+.text {
+  margin-top: 40px;
   padding: 10px;
-  float: left;
-  width: 50%;
+  font-size: 1.25em;
 }
-div:nth-child(3) {
-  clear: both;
+p {
+  width: 80px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 1.25em;
 }
-div:nth-child(5) {
-  clear: both;
+#p1 {
+  background-color: #a52a2a;
+  position: absolute;
+  right: 0px;
+}
+#p2 {
+  background-color: #deb887;
+  position: absolute;
+  right: 0px;
+}
+#p3 {
+  background-color: #5f9ea0;
+  position: absolute;
+  right: 0px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 993px) {
+  .col-lg-4 {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-lg-4 {
+    width: 31.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 992px) {
+  .col-md-6 {
+    float: left;
+    border: 1px solid black;
+  }
+
+  .col-md-6 {
+    width: 48%;
+  }
+}
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
 }
